@@ -1,0 +1,43 @@
+
+Tord Kvifte
+tkv015
+
+a)
+
+DequeFullException og DequeEmptyException er implementert som kjøretidsunntak fordi de blir kastet
+som følge av logisk feil i programmet. 
+
+c)
+
+size, addFirst, pullFirst og peekFirst har alle kompleksitet O(1), 
+fordi kjøretiden er konstant uavhengig av størrelsen på datamengden i en ArrayDeque.
+
+
+d)
+
+addLast, pullLast og peekLast har alle kompleksitet O(1), 
+fordi kjøretiden er konstant uavhengig av størrelsen på datamengden i en ArrayDeque.
+
+g)
+
+contains og toArray har kompleksitet O(n),
+fordi kjøretiden øker proposjonalt med størrelsen av datamengden i ArrayDeque.
+
+
+h)
+
+Kjøretiden på de korresponderende metodene på slutten og begynnelsen av tvekøen er like, 
+da metodene har konstant kjøretid uavhengig av størrelsen på tvekøen.
+
+i)
+
+Kompleksitet
+average:	O(n)
+slidingAvg:	O(n^2)
+
+I average øker kjøretiden proposjonalt med størrelsen av int-arrayet values.
+
+slidingAverage: 
+for-løkken inneholder to operasjoner med konstant kjøretid. Kjøretiden av den første for-loopen proposjonalt med width. 
+for each-løkken inneholder både toArray og average som har kompleksitet O(n). Kompleksiteten for slidingAverage vil dermed 
+se slik ut: n + n^2 + n^2. I O-notasjon tar vi den mest signifikante av disse og derav finner vi at kompleksiteten er O(n^2).
